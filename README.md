@@ -1,116 +1,156 @@
-# AI中台注册API应用保姆级指南（一知未来）
+<div align="center">
 
+# 🤖 AI中台注册API应用保姆级指南（一知未来）
 
-**快速四步走**：注册-充值-创建密钥-调用API 。**从注册到调用，几分钟内完成
+**从注册到调用，几分钟内完成** · 注册 → 充值 → 创建密钥 → 调用 API
 
-**01**注册账号** --**使用常用邮箱注册并登录控制台。
+[📖 网页版指南](readme.html) · [📊 A股量价TOP20看板](index-top20.html) · [🌐 AI中台](https://101gpt.cc)
 
-点击 https://101gpt.cc/register?aff=3KDMPTVKGK29
+</div>
 
-![image1.jpg](assets/image1.jpg)
+---
 
-**02** 兑换或**充值**（有兑换码填码兑换，或者按需充值或订阅套餐）
+## 🚀 快速四步走
 
-![image3.png](assets/image3.png)
+### 01 · 注册账号
 
-根据控制台展示的模型价格充值。余额按实际调用量扣除，余额可跨月使用。
+使用常用邮箱注册并登录控制台。
 
-**03**创建密钥** --**进入 API Key 页面创建密钥，并设置名称、选好分组，确定创建。
+👉 **注册入口**：<https://101gpt.cc/register?aff=3KDMPTVKGK29>
 
-![image4.png](assets/image4.png)
+![注册页面](assets/image1.jpg)
 
-![image5.png](assets/image5.png)
+---
 
-**04**开始调用** --**使用密钥，复制 Base URL 和 API Key，填入 OpenCode智能体工具。
+### 02 · 兑换或充值
 
-点击「使用密钥」--》选「OpenCode」--》复制配置代码。
+有兑换码填码兑换，或者按需充值或订阅套餐。
 
-![image6.png](assets/image6.png)
+![兑换充值页面](assets/image3.png)
 
-这个代码中最重要的信息，就是你的 apiKey，记得不要泄露给其他人哦。而 baseURL 对应就是大模型供应商 链接 **https://101gpt.cc/v1**
+> 💡 **提示**：根据控制台展示的模型价格充值。余额按实际调用量扣除，余额可跨月使用。
 
-你在这里也可以直接复制保存你的  **apiKey**
+---
 
-![image7.png](assets/image7.png)
+### 03 · 创建密钥
 
-电脑端下载好智能体软件 OpenCode ，我这里在云盘为你提供好可下载的软件。
+进入 **API Key** 页面创建密钥，并设置名称、选好分组，确定创建。
 
-- 如果是** 微软的Window系统**，下载这个版本的 opencode
-通过网盘分享的文件：opencode-desktop-windows-x64-1-14-24-0.exe
+![创建密钥·步骤1](assets/image4.png)
 
-链接: https://pan.baidu.com/s/1BC3hw4f-lWBPYvbBPfR4oA?pwd=8q87 提取码: 8q87
+![创建密钥·步骤2](assets/image5.png)
 
-- 如果是** Intel 芯片的苹果Mac**电脑，下载这个版本的 opencode
-通过网盘分享的文件：OpenCode-macOS (Intel).dmg
+---
 
-链接: https://pan.baidu.com/s/1AXvVRWlvDa8EeRsIdv3kPg?pwd=p89a 提取码: p89a
+### 04 · 开始调用
 
-如果是 **苹果自家芯片的苹果Mac**电脑，下载这个版本的 opencode
+使用密钥，复制 **Base URL** 和 **API Key**，填入 OpenCode 智能体工具。
 
-通过网盘分享的文件：OpenCode-macOS (Apple Silicon).dmg
+点击「使用密钥」→ 选「OpenCode」→ 复制配置代码。
 
-链接: https://pan.baidu.com/s/1--dJanQKL54Ri2o4tbvn1Q?pwd=53nu 提取码: 53nu
+![复制配置代码](assets/image6.png)
 
-下载好之后，安装 OpenCode ，安装完成后在桌面点击启动 OpenCode
+> ⚠️ **重要**：这个代码中最重要的信息，就是你的 **apiKey**，记得不要泄露给其他人哦。而 **baseURL** 对应就是大模型供应商链接：`https://101gpt.cc/v1`
 
-![image8.png](assets/image8.png)
+你在这里也可以直接复制保存你的 **apiKey**。
 
-![image9.png](assets/image9.png)
+![保存apiKey](assets/image7.png)
 
-刚开始「打开项目」就是选一个文件夹📂或者存储盘就好，智能体对具体的范围发挥智能，不会额外做功。小何在 Windows 电脑通常先选了 **D盘，**而苹果Mac 通常选择 Download 文件夹📂。**
+---
 
-然后把刚才在「使用密钥」中复制的代码直接 **Ctrl+V** 粘贴给 OpenCode 对话框，让它去配置好供应商API，然后关闭 OpenCode，重新打开它。
+## 📥 下载并安装 OpenCode
 
-你在「选择模型」中，就能看到 OpenAI 家的**一流AI大模型**了，比如 gpt-5.6 系列。
+电脑端下载好智能体软件 OpenCode，云盘已为你备好各平台安装包：
 
-![image10.png](assets/image10.png)
+| 平台 | 安装包 | 网盘链接 | 提取码 |
+|------|--------|----------|:---:|
+| 🪟 Windows | `opencode-desktop-windows-x64-1-14-24-0.exe` | <https://pan.baidu.com/s/1BC3hw4f-lWBPYvbBPfR4oA?pwd=8q87> | `8q87` |
+| 🍎 Mac（Intel） | `OpenCode-macOS (Intel).dmg` | <https://pan.baidu.com/s/1AXvVRWlvDa8EeRsIdv3kPg?pwd=p89a> | `p89a` |
+| 🍏 Mac（Apple 芯片） | `OpenCode-macOS (Apple Silicon).dmg` | <https://pan.baidu.com/s/1--dJanQKL54Ri2o4tbvn1Q?pwd=53nu> | `53nu` |
 
-用上 OpenCode，开始用上你的**AI数字员工**，让它给你干活吧！
+---
 
-**【补充】——** 另一种手动添加大模型供应商和APIKey 的方法。
+## ⚙️ 安装与配置
 
-调用你的API，你手上有两个关键信息：
+下载好之后安装 OpenCode，安装完成后在桌面点击启动。
 
-一个是模型供应商链接 baseURL ，在我们的这个AI中台这里是：
+![启动OpenCode](assets/image8.png)
 
-https://101gpt.cc/v1
+![OpenCode界面](assets/image9.png)
 
-另一个是你自己要保管好的 API密钥 apiKey  "sk-**" 开头的字段。
+刚开始「打开项目」就是选一个文件夹 📂 或者存储盘就好，智能体对具体的范围发挥智能，不会额外做功。小何在 Windows 电脑通常先选了 **D盘**，而苹果 Mac 通常选择 **Download 文件夹** 📂。
 
-手动添加供应商如下图指引：左下角⚙️设置那里点开，再选择「供应商」--》自定义供应商。
+> 🔧 **操作**：把刚才在「使用密钥」中复制的代码直接 **Ctrl+V** 粘贴给 OpenCode 对话框，让它去配置好供应商 API，然后关闭 OpenCode，重新打开它。
 
-![image11.png](assets/image11.png)
+你在「选择模型」中，就能看到 OpenAI 家的**一流 AI 大模型**了，比如 gpt-5.6 系列。
 
-供应商信息如供应商ID、现实名称可以你自己填，比如咱们站 你可以填 101gpt
+![选择模型](assets/image10.png)
 
-而基础URL，API密钥上面都提到了。模型部分可填可不填。由于 OpenCode是智能体，建议你遇事不决，就问它解决是聪明办法。
+用上 OpenCode，开始用上你的 **AI 数字员工**，让它给你干活吧！🎉
 
-![image12.png](assets/image12.png)
+---
 
-【补充】——思维篇
+## 📌 补充一：手动添加供应商与 API Key
 
-上面 AI中台注册API应用流程步骤应该讲得挺细了。有两点思维转变，会带给你不一样的旅程。
+调用你的 API，你手上有两个关键信息：
 
-第一个是——** AI first**。重要事情说三遍：** AI first， AI first， AI first！**
+| 信息 | 值 |
+|------|-----|
+| **baseURL**（模型供应商链接） | `https://101gpt.cc/v1` |
+| **apiKey**（API密钥，需自行保管） | `sk-` 开头的字段 |
 
-遇事不决，先问AI。AI时代，最便捷的解惑决疑的路径就是第一时间问AI。我也是在不断经历中改变自己的思维习惯。从下意识问其他人，变成第一时间想到问AI，要不找AI直接搞定问题，要不找AI补充背景信息，在和他人有更深入交流。毕竟你手下已经有了一流大模型和其他够用的辅助大模型。
+手动添加供应商：左下角 ⚙️ **设置** → 选择「供应商」→ **自定义供应商**。
 
-**AI first，电脑问题找AI，修理Bug做批处理找AI，写文案咨询AI，做策划问AI ……**
+![添加供应商](assets/image11.png)
 
-第二个是—— **高低搭配，干活不累**。AI也可以有团队，AI也能相互打配合。让AI组队更好为你打工。
+> 💡 **提示**：供应商信息如供应商 ID、现实名称可以你自己填，比如咱们站你可以填 **101gpt**。而基础 URL、API 密钥上面都提到了。模型部分可填可不填。由于 OpenCode 是智能体，建议你遇事不决，就问它解决是聪明办法。
 
-简单任务问题找普通模型，复杂高智难题找一流模型。
+![供应商配置详情](assets/image12.png)
 
-一流模型思考做方案，次流模型细化做执行，这样搭配**性价比高**。
+---
 
-opencode 的其中一个好处，有不少免费模型额度就能解决处理很多日常任务。所有事都找最聪明的 gpt 很费token ，它的高智能用到尖兵连更划算。
+## 🧠 补充二：思维篇
 
-**一流模型**相当于 教授专家和博士生，**次等模型**就是分级的研究生本科生，还有更次等的相当于高中生初中生。
+上面流程步骤应该讲得挺细了。有两点思维转变，会带给你不一样的旅程。
 
-你可以搭配着用找感觉哈。当然欢迎土豪，就都用最精锐的，也是非常非常爽的😄。
+### 第一个 —— AI first
 
-![image13.png](assets/image13.png)
+> **AI first，AI first，AI first！** 遇事不决，先问 AI。AI 时代，最便捷的解惑决疑的路径就是第一时间问 AI。AI first，电脑问题找 AI，修理 Bug 做批处理找 AI，写文案咨询 AI，做策划问 AI……
 
-如有售后疑问 可咨询客服
+### 第二个 —— 高低搭配，干活不累
 
-WeChat：**hexiaoman42**
+AI 也可以有团队，AI 也能相互打配合。让 AI 组队更好为你打工。简单任务问题找普通模型，复杂高智难题找一流模型。
+
+> 💡 **性价比策略**：一流模型思考做方案，次流模型细化做执行，这样搭配**性价比高**。opencode 的其中一个好处，有不少免费模型额度就能解决处理很多日常任务。所有事都找最聪明的 gpt 很费 token，它的高智能用到尖兵连更划算。
+
+| 模型档次 | 类比 | 用途 |
+|----------|------|------|
+| 🎓 一流模型 | 教授专家、博士生 | 思考做方案 |
+| 🎓 次等模型 | 研究生、本科生 | 细化做执行 |
+| 📘 更次等 | 高中生、初中生 | 日常简单任务 |
+
+你可以搭配着用找感觉哈。当然欢迎土豪，就都用最精锐的，也是非常非常爽的 😄。
+
+<div align="center">
+
+<img src="assets/image13.png" alt="扫码添加客服微信" width="260">
+
+*👆 扫码添加客服微信*
+
+</div>
+
+---
+
+## 📞 售后咨询
+
+如有售后疑问，可咨询客服：
+
+**WeChat：`hexiaoman42`**
+
+---
+
+<div align="center">
+
+*由 README 生成网页版见 [readme.html](readme.html) · 更多 AI 实践案例见仓库其他页面*
+
+</div>

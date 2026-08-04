@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI中台注册API应用保姆级指南（一知未来）</title>
+<style>
+  :root { --brand:#2563eb; --brand-soft:#eff6ff; --text:#1f2937; --muted:#6b7280; --border:#e5e7eb; --bg:#f8fafc; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); line-height:1.75; }
+  .wrap { max-width:820px; margin:0 auto; padding:32px 20px 80px; }
+  header.hero { background:linear-gradient(135deg,#2563eb,#7c3aed); color:#fff; border-radius:16px; padding:40px 32px; margin-bottom:32px; text-align:center; }
+  header.hero h1 { font-size:26px; font-weight:800; letter-spacing:0.5px; }
+  header.hero .sub { margin-top:12px; font-size:15px; opacity:0.92; }
+  .steps { counter-reset:step; }
+  .step { background:#fff; border:1px solid var(--border); border-radius:12px; padding:24px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+  .step::before { counter-increment:step; content:"0" counter(step); display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:10px; background:var(--brand); color:#fff; font-weight:800; font-size:18px; margin-bottom:12px; }
+  .step h2 { font-size:18px; font-weight:700; margin-bottom:10px; color:#111827; }
+  .step p { margin-bottom:10px; color:var(--text); }
+  .step img { display:block; max-width:100%; height:auto; border-radius:8px; border:1px solid var(--border); margin:12px 0; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .step a { color:var(--brand); word-break:break-all; }
+  .callout { background:var(--brand-soft); border-left:4px solid var(--brand); border-radius:8px; padding:14px 16px; margin:12px 0; font-size:14.5px; }
+  .callout strong { color:#1d4ed8; }
+  .note { background:#fefce8; border-left:4px solid #f59e0b; border-radius:8px; padding:14px 16px; margin:12px 0; font-size:14.5px; }
+  .code { background:#0f172a; color:#e2e8f0; border-radius:8px; padding:12px 14px; margin:12px 0; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:13.5px; overflow-x:auto; word-break:break-all; }
+  .download { display:flex; flex-direction:column; gap:10px; }
+  .dl-item { background:#f9fafb; border:1px solid var(--border); border-radius:8px; padding:12px 14px; font-size:14px; }
+  .dl-item .dl-title { font-weight:600; margin-bottom:4px; }
+  .dl-item a { color:var(--brand); text-decoration:none; }
+  .dl-item a:hover { text-decoration:underline; }
+  .tag { display:inline-block; background:#dbeafe; color:#1d4ed8; border-radius:999px; padding:2px 10px; font-size:12px; font-weight:600; margin-bottom:10px; }
+  .section-title { font-size:20px; font-weight:800; color:#111827; margin:36px 0 16px; padding-bottom:8px; border-bottom:2px solid var(--brand); }
+  footer { margin-top:40px; text-align:center; color:var(--muted); font-size:13px; }
+  footer a { color:var(--brand); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>AI中台注册API应用保姆级指南</h1>
+    <div class="sub">一知未来 · 从注册到调用，几分钟内完成</div>
+  </header>
+
+  <div class="callout"><strong>快速四步走：</strong>注册 → 充值 → 创建密钥 → 调用 API。</div>
+
+  <!-- Step 01 -->
+  <div class="steps">
+    <div class="step">
+      <h2>注册账号</h2>
+      <p>使用常用邮箱注册并登录控制台。</p>
+      <p>👉 <a href="https://101gpt.cc/register?aff=3KDMPTVKGK29">点击 https://101gpt.cc/register?aff=3KDMPTVKGK29 注册</a></p>
+      <img src="assets/image1.jpg" alt="注册页面">
+    </div>
+
+    <!-- Step 02 -->
+    <div class="step">
+      <h2>兑换或充值</h2>
+      <p>有兑换码填码兑换，或者按需充值或订阅套餐。</p>
+      <img src="assets/image3.png" alt="兑换充值页面">
+      <div class="callout">根据控制台展示的模型价格充值。余额按实际调用量扣除，余额可跨月使用。</div>
+    </div>
+
+    <!-- Step 03 -->
+    <div class="step">
+      <h2>创建密钥</h2>
+      <p>进入 API Key 页面创建密钥，并设置名称、选好分组，确定创建。</p>
+      <img src="assets/image4.png" alt="创建密钥步骤1">
+      <img src="assets/image5.png" alt="创建密钥步骤2">
+    </div>
+
+    <!-- Step 04 -->
+    <div class="step">
+      <h2>开始调用</h2>
+      <p>使用密钥，复制 <strong>Base URL</strong> 和 <strong>API Key</strong>，填入 OpenCode 智能体工具。</p>
+      <p>点击「使用密钥」→ 选「OpenCode」→ 复制配置代码。</p>
+      <img src="assets/image6.png" alt="复制配置代码">
+      <div class="note">这个代码中最重要的信息，就是你的 <strong>apiKey</strong>，记得不要泄露给其他人哦。而 baseURL 对应就是大模型供应商链接 <strong>https://101gpt.cc/v1</strong></div>
+      <p>你在这里也可以直接复制保存你的 <strong>apiKey</strong>。</p>
+      <img src="assets/image7.png" alt="保存apiKey">
+    </div>
+  </div>
+
+  <h2 class="section-title">📥 下载并安装 OpenCode</h2>
+
+  <div class="step">
+    <p>电脑端下载好智能体软件 OpenCode，这里在云盘为你提供好可下载的软件。</p>
+    <div class="download">
+      <div class="dl-item">
+        <div class="dl-title">🪟 微软 Windows 系统</div>
+        <span>opencode-desktop-windows-x64-1-14-24-0.exe</span><br>
+        <a href="https://pan.baidu.com/s/1BC3hw4f-lWBPYvbBPfR4oA?pwd=8q87">链接: https://pan.baidu.com/s/1BC3hw4f-lWBPYvbBPfR4oA?pwd=8q87</a>　提取码: <strong>8q87</strong>
+      </div>
+      <div class="dl-item">
+        <div class="dl-title">🍎 苹果 Mac（Intel 芯片）</div>
+        <span>OpenCode-macOS (Intel).dmg</span><br>
+        <a href="https://pan.baidu.com/s/1AXvVRWlvDa8EeRsIdv3kPg?pwd=p89a">链接: https://pan.baidu.com/s/1AXvVRWlvDa8EeRsIdv3kPg?pwd=p89a</a>　提取码: <strong>p89a</strong>
+      </div>
+      <div class="dl-item">
+        <div class="dl-title">🍏 苹果 Mac（Apple 芯片）</div>
+        <span>OpenCode-macOS (Apple Silicon).dmg</span><br>
+        <a href="https://pan.baidu.com/s/1--dJanQKL54Ri2o4tbvn1Q?pwd=53nu">链接: https://pan.baidu.com/s/1--dJanQKL54Ri2o4tbvn1Q?pwd=53nu</a>　提取码: <strong>53nu</strong>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">⚙️ 安装与配置</h2>
+
+  <div class="step">
+    <p>下载好之后，安装 OpenCode，安装完成后在桌面点击启动 OpenCode。</p>
+    <img src="assets/image8.png" alt="启动OpenCode">
+    <img src="assets/image9.png" alt="OpenCode界面">
+    <p>刚开始「打开项目」就是选一个文件夹📂或者存储盘就好，智能体对具体的范围发挥智能，不会额外做功。小何在 Windows 电脑通常先选了 <strong>D盘</strong>，而苹果 Mac 通常选择 <strong>Download 文件夹</strong>📂。</p>
+    <div class="callout">把刚才在「使用密钥」中复制的代码直接 <strong>Ctrl+V</strong> 粘贴给 OpenCode 对话框，让它去配置好供应商 API，然后关闭 OpenCode，重新打开它。</div>
+    <p>你在「选择模型」中，就能看到 OpenAI 家的一流 AI 大模型了，比如 gpt-5.6 系列。</p>
+    <img src="assets/image10.png" alt="选择模型">
+    <p>用上 OpenCode，开始用上你的 <strong>AI数字员工</strong>，让它给你干活吧！</p>
+  </div>
+
+  <h2 class="section-title">📌 补充：手动添加供应商与 API Key</h2>
+
+  <div class="step">
+    <p>调用你的 API，你手上有两个关键信息：</p>
+    <ul style="margin:10px 0 10px 20px;">
+      <li>模型供应商链接 <strong>baseURL</strong>：<span class="code" style="display:inline; padding:2px 8px;">https://101gpt.cc/v1</span></li>
+      <li>你要自己保管好的 API 密钥 <strong>apiKey</strong>：<span class="code" style="display:inline; padding:2px 8px;">"sk-*"</span> 开头的字段。</li>
+    </ul>
+    <p>手动添加供应商：左下角 ⚙️ 设置里点开，再选择「供应商」→「自定义供应商」。</p>
+    <img src="assets/image11.png" alt="添加供应商">
+    <div class="callout">供应商信息如供应商ID、现实名称可以你自己填，比如咱们站你可以填 <strong>101gpt</strong>。而基础URL、API密钥上面都提到了。模型部分可填可不填。由于 OpenCode 是智能体，建议你遇事不决，就问它解决是聪明办法。</div>
+    <img src="assets/image12.png" alt="供应商配置详情">
+  </div>
+
+  <h2 class="section-title">🧠 补充：思维篇</h2>
+
+  <div class="step">
+    <p>上面 AI中台注册API应用流程步骤应该讲得挺细了。有两点思维转变，会带给你不一样的旅程。</p>
+
+    <h3 style="margin:14px 0 8px; font-size:16px;">第一个 —— AI first</h3>
+    <div class="callout"><strong>AI first，AI first，AI first！</strong> 遇事不决，先问 AI。AI 时代，最便捷的解惑决疑的路径就是第一时间问 AI。AI first，电脑问题找 AI，修理 Bug 做批处理找 AI，写文案咨询 AI，做策划问 AI……</div>
+
+    <h3 style="margin:14px 0 8px; font-size:16px;">第二个 —— 高低搭配，干活不累</h3>
+    <p>AI 也可以有团队，AI 也能相互打配合。让 AI 组队更好为你打工。简单任务问题找普通模型，复杂高智难题找一流模型。</p>
+    <div class="callout">一流模型思考做方案，次流模型细化做执行，这样搭配<strong>性价比高</strong>。一流模型相当于教授专家和博士生，次等模型就是分级的研究生本科生，还有更次等的相当于高中生初中生。你可以搭配着用找感觉。当然欢迎土豪，就都用最精锐的，也是非常非常爽的😄。</div>
+    <div style="text-align:center; margin:16px 0;">
+      <img src="assets/image13.png" alt="扫码添加客服微信" style="width:260px; max-width:70%; height:auto; border-radius:8px;">
+      <p style="font-size:13px; color:#6b7280; margin-top:8px;">👆 扫码添加客服微信</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:24px;">
+    如有售后疑问可咨询客服<br>
+    WeChat：<strong>hexiaoman42</strong>
+  </div>
+
+  <footer>
+    由 README.md 自动生成 · <a href="index-top20.html">A股量价 TOP20 实时看板</a> · <a href="https://github.com/Seasonno1314/AIPlatform">GitHub 仓库</a>
+  </footer>
+
+</div>
+</body>
+</html>
