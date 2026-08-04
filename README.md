@@ -131,13 +131,10 @@ AI 也可以有团队，AI 也能相互打配合。让 AI 组队更好为你打�
 
 你可以搭配着用找感觉哈。当然欢迎土豪，就都用最精锐的，也是非常非常爽的 😄。
 
-<div align="center">
-
-<img src="assets/image13.png" alt="扫码添加客服微信" width="260">
-
-*👆 扫码添加客服微信*
-
-</div>
+<p align="center">
+  <img src="assets/image13.png" alt="扫码添加客服微信" width="260">
+  <br><em>👆 扫码添加客服微信</em>
+</p>
 
 ---
 
