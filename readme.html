@@ -107,7 +107,8 @@
 
   <div class="step">
     <p>从 Windows 应用商店（Microsoft Store）搜索并下载 ChatGPT（原名 Codex）。</p>
-    <p>从 Windows 菜单里找到 Microsoft Store 并打开，在界面上搜索 ChatGPT，如下图：</p>
+    <p>从 Windows 菜单里找到 Microsoft Store 并打开，在界面上搜索 ChatGPT，如下图：
+    <img src="assets/fgpt-c2-01.png" alt="Microsoft Store 中搜索并下载 ChatGPT"></p>
     <div class="callout"><strong>说明：</strong>近期 ChatGPT 更新频繁，建议大家使用最新版。</div>
     <div class="note">安装好先别打开，配置好 API Key 以后再进入（配置方法见下一节「三、」）。</div>
   </div>
@@ -124,23 +125,34 @@
 
     <h3 style="margin:16px 0 8px; font-size:16px;">方式 1 —— CC Switch 配置方法（推荐）</h3>
     <p>CC Switch 官方网站下载：<a href="https://ccswitch.io/zh/download" target="_blank" rel="noopener">https://ccswitch.io/zh/download</a></p>
-    <p>安装并运行 CC Switch，在界面点击 ChatGPT 图标（选择目标应用为 ChatGPT），再点击「增加」图标，如下图：</p>
-    <div class="callout">选择「自定义配置」后，页面往下翻，按图示填写相关信息：</div>
+    <p>安装并运行 CC Switch，在界面点击 ChatGPT 图标（选择目标应用为 ChatGPT），再点击「增加」图标，如下图：
+    <img src="assets/fgpt-c3-01.png" alt="CC Switch 点击 ChatGPT 图标并增加"></p>
+    <div class="callout">选择「自定义配置」后，页面往下翻，按图示填写相关信息：
+    <img src="assets/fgpt-c3-02.png" alt="CC Switch 选择自定义配置后页面往下翻"></div>
     <div class="kv">
       <div><b>供应商名称：</b>101gpt</div>
       <div><b>官网地址：</b><a href="https://101gpt.cc" target="_blank" rel="noopener">https://101gpt.cc</a></div>
       <div><b>API Key：</b>从 https://101gpt.cc 获取的，以 “sk-” 开头，不带引号</div>
       <div><b>API 请求地址（Base URL）：</b><span class="code" style="display:inline; padding:2px 8px;">https://101gpt.cc/v1</span></div>
+    <img src="assets/fgpt-c3-03.png" alt="CC Switch 按图示填写供应商信息">
     </div>
-    <p>添加后回到主界面，按「启用」按钮，重新启动 ChatGPT(Codex) 即可。</p>
+    <p>添加后回到主界面，按「启用」按钮，重新启动 ChatGPT(Codex) 即可。
+    <img src="assets/fgpt-c3-04.png" alt="CC Switch 启用并重启 ChatGPT"></p>
     <div class="callout">利用 CC Switch 可以配置多个 API 来源进行自由切换模型，支持国内外主流大语言模型。</div>
 
     <h3 style="margin:18px 0 8px; font-size:16px;">方式 2 —— 手动配置方法</h3>
     <ol class="alpha">
       <li><strong>操作配置文件：</strong>打开并登录 <a href="https://101gpt.cc" target="_blank" rel="noopener">101gpt.cc</a>，左边菜单栏选择「API 密钥」，再选择其中一个密钥，点击「使用密钥」按钮，按下图示意进行选择并复制。</li>
+    <img src="assets/fgpt-c3-05.png" alt="101gpt 控制台使用密钥按钮">
+    <img src="assets/fgpt-c3-06.png" alt="101gpt 控制台复制配置">
       <li>按键盘 <span class="code" style="display:inline; padding:2px 8px;">Win + R</span>，输入 <span class="code" style="display:inline; padding:2px 8px;">notepad %userprofile%/.codex/config.toml</span>，按回车。</li>
+    <img src="assets/fgpt-c3-07.png" alt="Win+R 打开 config.toml">
       <li>用记事本打开配置文件以后，将刚刚从 101gpt.cc 复制过来的内容，粘贴到配置文件的最前面，保存（Ctrl+S）。</li>
+    <img src="assets/fgpt-c3-08.png" alt="记事本粘贴配置内容">
       <li><strong>操作密钥文件：</strong>切换回 101gpt.cc 网页，在使用 API 密钥界面点击「复制」按钮复制密钥。再按 <span class="code" style="display:inline; padding:2px 8px;">Win+R</span> 输入 <span class="code" style="display:inline; padding:2px 8px;">notepad %userprofile%/.codex/auth.json</span> 打开密钥文件，将复制的密钥粘贴进去并保存。</li>
+    <img src="assets/fgpt-c3-09.png" alt="101gpt 控制台复制密钥">
+    <img src="assets/fgpt-c3-10.png" alt="Win+R 打开 auth.json">
+    <img src="assets/fgpt-c3-11.png" alt="记事本粘贴密钥">
       <li>在 Windows 菜单中找到并打开 ChatGPT 就可以用了。</li>
     </ol>
   </div>
@@ -151,9 +163,14 @@
   <div class="step">
     <ol class="alpha">
       <li><strong>下载 Claude：</strong>在 Windows 中打开 Microsoft Store 并搜索 Claude，或者到官网下载（<a href="https://claude.com" target="_blank" rel="noopener">claude.com</a>）。</li>
+    <img src="assets/fgpt-c4-01.png" alt="Microsoft Store 搜索 Claude 或官网下载">
       <li><strong>安装 CC Switch：</strong>下载地址 <a href="https://ccswitch.io/zh/download" target="_blank" rel="noopener">https://ccswitch.io/zh/download</a>。</li>
       <li><strong>在 CC Switch 中配置 Claude Desktop</strong>（Claude Code 方法类似）：选择 Claude Desktop，再添加供应商，在「添加供应商」界面选择「自定义配置」。</li>
+    <img src="assets/fgpt-c4-02.png" alt="CC Switch 选择 Claude Desktop 添加供应商">
+    <img src="assets/fgpt-c4-03.png" alt="添加供应商选择自定义配置">
       <li>其它参数配置（红色框中必填）：API Key 是从 <a href="https://101gpt.cc" target="_blank" rel="noopener">101gpt.cc</a> 站点获取的 API Key（<strong>创建 API Key 时必须选 Claude 类分组</strong>），再点击保存即可。</li>
+    <img src="assets/fgpt-c4-04.png" alt="Claude 供应商参数配置（选 Claude 分组）">
+    <img src="assets/fgpt-c4-05.png" alt="Claude 供应商参数配置示意">
       <li>在 Windows 中打开 Claude Desktop（或 Claude Code）就可以使用了。</li>
     </ol>
     <div class="kv">
@@ -184,7 +201,10 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1</pre>
   <div class="step">
     <h3 style="margin:0 0 8px; font-size:16px;">1、配置 WorkBuddy（按需选配）</h3>
     <p>腾讯 WorkBuddy 下载地址：<a href="https://www.codebuddy.cn/work/" target="_blank" rel="noopener">https://www.codebuddy.cn/work/</a>。在对话框右下方选择「配置自定义模型」，在对话框里选择「+添加模型」。</p>
+    <img src="assets/fgpt-c5-01.png" alt="WorkBuddy 配置自定义模型-添加模型">
+    <img src="assets/fgpt-c5-02.png" alt="WorkBuddy 添加模型对话框">
     <p>在「添加模型」或「编辑模型」对话框中输入以下信息：</p>
+    <img src="assets/fgpt-c5-03.png" alt="WorkBuddy 添加模型输入信息">
     <div class="kv">
       <div><b>提供商：</b>自定义 / Custom</div>
       <div><b>接口地址（不能填错）：</b><span class="code" style="display:inline; padding:2px 8px;">https://101gpt.cc/v1</span></div>
@@ -192,6 +212,7 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1</pre>
       <div><b>模型名称：</b>可填 OpenAI 主流模型，例如：<br><span class="code" style="display:inline; padding:4px 8px;">gpt-5.6-sol gpt-5.6-terra gpt-5.6-luna gpt-6-astra gpt-6-sol gpt-6-luna gpt-6.1-sol gpt-6.1-terra</span><br>（也可填 101gpt 已接入的 claude-* / gemini-* / grok-* / deepseek-* 等模型）</div>
     </div>
     <p>配置好以后，可以在 WorkBuddy 中选择该模型进行交互。</p>
+    <img src="assets/fgpt-c5-04.png" alt="WorkBuddy 中选择已配置模型交互">
   </div>
 
   <div class="step">
@@ -209,6 +230,9 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1</pre>
 
     <h4>方式二：手动添加自定义提供商</h4>
     <p>在 OpenCode 主对话框下方选择模型下拉列表，选择「管理模型」，在管理模型对话框中选择「+连接提供商」，再选择「自定义 OpenAI 兼容提供商」。</p>
+    <img src="assets/fgpt-c5-05.png" alt="OpenCode 管理模型-自定义 OpenAI 兼容提供商">
+    <img src="assets/fgpt-c5-06.png" alt="OpenCode 连接提供商选择">
+    <img src="assets/fgpt-c5-07.png" alt="OpenCode 自定义提供商入口">
     <p>在自定义提供商对话框中输入以下信息：</p>
     <div class="kv">
       <div><b>提供商 ID：</b>101gpt</div>
@@ -216,25 +240,37 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1</pre>
       <div><b>基础 URL（不能填错）：</b><span class="code" style="display:inline; padding:2px 8px;">https://101gpt.cc/v1</span></div>
       <div><b>API 密钥：</b>从 101gpt.cc 获取的 API 密钥（以 sk- 开头）</div>
       <div><b>模型：</b>填入常见模型名称，例如：<br><span class="code" style="display:inline; padding:4px 8px;">gpt-5.6-sol gpt-5.6-terra gpt-5.6-luna gpt-6-astra gpt-6-sol gpt-6-luna gpt-6.1-sol gpt-6.1-terra</span><br>（及 claude-* / gemini-* / grok-* / deepseek-* 等 101gpt 已接入的模型）</div>
+    <img src="assets/fgpt-c5-08.png" alt="OpenCode 自定义提供商填写信息">
+    <img src="assets/fgpt-c5-09.png" alt="OpenCode 提交配置">
+    <img src="assets/fgpt-c5-10.png" alt="OpenCode 配置提交确认">
     </div>
     <p>最后点击「提交」即可。配置好以后，在对话框下方就可以选择或搜索模型，在顶部搜索框中输入 “101gpt” 即可快速找到刚配置好的模型。</p>
+    <img src="assets/fgpt-c5-11.png" alt="OpenCode 搜索 101gpt 模型">
   </div>
 
   <div class="step">
     <h3 style="margin:0 0 8px; font-size:16px;">3、配置 DeepSeek Harness（按需选配）</h3>
     <p>DeepSeek Harness 下载地址：<a href="https://www.deepseek.com/harness/" target="_blank" rel="noopener">https://www.deepseek.com/harness/</a>。在配置页面，先在界面左下角点击「设置」，在设置对话框里选择「模型」，点击「添加提供方」。</p>
+    <img src="assets/fgpt-c5-12.png" alt="DeepSeek Harness 设置-模型-添加提供方">
+    <img src="assets/fgpt-c5-13.png" alt="DeepSeek Harness 添加提供方界面">
     <div class="kv">
       <div><b>提供方：</b>选择 openai 即可</div>
       <div><b>API 密钥：</b>以 “sk-” 开头的密钥，从 101gpt.cc 网站获取</div>
       <div><b>自定义设置 → API 地址：</b><span class="code" style="display:inline; padding:2px 8px;">https://101gpt.cc/v1</span></div>
       <div><b>已自定义模型目录：</b>填入常见 GPT 模型名称，例如：<br><span class="code" style="display:inline; padding:4px 8px;">gpt-5.6-sol gpt-5.6-terra gpt-5.6-luna gpt-6-astra gpt-6-sol gpt-6-luna gpt-6.1-sol gpt-6.1-terra</span></div>
+    <img src="assets/fgpt-c5-14.png" alt="DeepSeek Harness 填写 API 地址">
     </div>
   </div>
 
   <div class="step">
     <h3 style="margin:0 0 8px; font-size:16px;">4、配置 TraeWork（按需选配）</h3>
     <p>TraeWork 下载地址：<a href="https://www.trae.cn/" target="_blank" rel="noopener">https://www.trae.cn/</a>。在模型对话框页面，点击模型下拉列表，在菜单中选择「添加模型」，在「模型」界面中点击「添加模型」。</p>
+    <img src="assets/fgpt-c5-15.png" alt="TraeWork 添加模型">
+    <img src="assets/fgpt-c5-16.png" alt="TraeWork 模型列表添加">
+    <img src="assets/fgpt-c5-17.png" alt="TraeWork 添加模型入口">
     <p>在「添加模型」界面中选择「自定义模型」，在「自定义模型」界面中输入以下信息：</p>
+    <img src="assets/fgpt-c5-18.png" alt="TraeWork 自定义模型输入信息">
+    <img src="assets/fgpt-c5-19.png" alt="TraeWork 自定义模型界面">
     <div class="kv">
       <div><b>API 格式：</b>OpenAI Chat Completions</div>
       <div><b>自定义请求地址：</b><span class="code" style="display:inline; padding:2px 8px;">https://101gpt.cc/v1</span></div>
@@ -244,6 +280,8 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1</pre>
       <div><b>模型系统：</b>可选 GPT-6 系列</div>
     </div>
     <p>添加完以后，刚才输入的模型出现在模型列表中，可以在此继续增加或者修改；模型设置完成以后，就可以在对话框下面的模型列表中看到 GPT 模型了。</p>
+    <img src="assets/fgpt-c5-20.png" alt="TraeWork 模型出现在列表">
+    <img src="assets/fgpt-c5-21.png" alt="TraeWork 模型列表查看 GPT 模型">
   </div>
 
   <div class="callout" style="margin-top:8px;">
