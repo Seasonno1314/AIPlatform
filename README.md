@@ -73,7 +73,7 @@
 
 ![供应商配置详情](assets/image12.png)
 
-> 🔄 **新手必看 · 重启后生效**：保存自定义供应商与 API Key 后，请**彻底退出并重新打开 OpenCode**（不是只关窗口，要结束进程），新的 AI 模型列表才会加载；只关窗口不重启，可能看不到刚加的模型。
+> 🔄 **新手必看 · 重启后生效**：保存自定义供应商与 API Key 后，请**关闭 OpenCode 后重启即可**，新的 AI 模型列表才会加载；重启后即可看到刚加的模型。
 
 ---
 
@@ -125,7 +125,7 @@ CC Switch 官方网站下载：<https://ccswitch.io/zh/download>
 
 > 💡 利用 CC Switch 可以配置多个 API 来源进行自由切换模型，支持国内外主流大语言模型。
 
-> 🔄 **新手必看 · 重启后生效**：在 CC Switch 点击「启用」后，请**彻底退出并重新打开 ChatGPT(Codex)**，新的 AI 模型列表才会加载生效。
+> 🔄 **新手必看 · 重启后生效**：在 CC Switch 点击「启用」后，请**关闭 ChatGPT(Codex) 后重启即可**，新的 AI 模型列表才会加载生效。
 
 ### 方式 2 —— 手动配置方法
 
@@ -150,7 +150,7 @@ CC Switch 官方网站下载：<https://ccswitch.io/zh/download>
 
 5. 在 Windows 菜单中找到并打开 ChatGPT 就可以用了。
 
-> 🔄 **新手必看 · 重启后生效**：手动改完 `config.toml` 和 `auth.json` 并保存后，如果 ChatGPT 还开着，请**彻底退出并重新打开**，新的 AI 模型列表才会加载生效。
+> 🔄 **新手必看 · 重启后生效**：手动改完 `config.toml` 和 `auth.json` 并保存后，如果 ChatGPT 还开着，请**关闭后重启即可**，新的 AI 模型列表才会加载生效。
 
 ---
 
@@ -174,7 +174,7 @@ CC Switch 官方网站下载：<https://ccswitch.io/zh/download>
 
 5. 在 Windows 中打开 Claude Desktop（或 Claude Code）就可以使用了。
 
-> 🔄 **新手必看 · 重启后生效**：在 CC Switch 保存配置后，请**彻底退出并重新打开 Claude Desktop（或 Claude Code）**，新的 AI 模型列表才会加载生效。
+> 🔄 **新手必看 · 重启后生效**：在 CC Switch 保存配置后，请**关闭 Claude Desktop（或 Claude Code）后重启即可**，新的 AI 模型列表才会加载生效。
 
 | 字段 | 值 |
 |------|-----|
@@ -205,7 +205,7 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 > 💡 以下均为「按需选配」。无论接哪个智能体，你都需要先在 <https://101gpt.cc> 创建好 API Key（按所用模型家族选对应分组），再填入对应工具的 Base URL 与密钥。
 
-> 🔄 **新手必看 · 重启后生效**：无论接入下面哪个智能体，填完 API Key / Base URL / 模型信息后，都要**彻底退出并重新打开该软件**（不是只关窗口，要结束进程），新的 AI 模型列表才会加载生效。**这是新手最容易漏掉的一步！**
+> 🔄 **新手必看 · 重启后生效**：无论接入下面哪个智能体，填完 API Key / Base URL / 模型信息后，都要**关闭桌面软件后重启即可**，新的 AI 模型列表才会加载生效。**这是新手最容易漏掉的一步！**
 
 ### 1、配置 WorkBuddy（按需选配）
 
@@ -229,7 +229,7 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 ![WorkBuddy 中选择已配置模型交互](assets/fgpt-c5-04.png)
 
-> 🔄 **新手必看 · 重启后生效**：保存自定义模型后，请**彻底退出并重新打开 WorkBuddy**，新添加的模型才会加载生效；重启后到模型选择处即可看到 101gpt 模型。
+> 🔄 **新手必看 · 重启后生效**：保存自定义模型后，请**关闭 WorkBuddy 后重启即可**，新添加的模型才会加载生效；重启后到模型选择处即可看到 101gpt 模型。
 
 ### 2、配置 OpenCode（按需选配）
 
@@ -248,7 +248,7 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 ![选择模型](assets/image10.png)
 
-> 🔄 **新手必看 · 重启后生效**：粘贴配置后必须**彻底退出并重新打开 OpenCode**（不是只关窗口），新的 AI 模型列表才会加载。如果「选择模型」里没看到新模型，八成是没重启干净。
+> 🔄 **新手必看 · 重启后生效**：粘贴配置后**关闭 OpenCode 后重启即可**，新的 AI 模型列表才会加载。如果「选择模型」里没看到新模型，重启后再看看。
 
 用上 OpenCode，开始用上你的 **AI数字员工**，让它给你干活吧！
 
@@ -278,7 +278,7 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 ![OpenCode 搜索 101gpt 模型](assets/fgpt-c5-11.png)
 
-> 🔄 **新手必看 · 重启后生效**：手动填完 API Key、基础 URL 和模型、点击「提交」后，一定要**彻底退出并重新打开 OpenCode**（只关窗口不算，要在托盘或任务管理器里结束进程），新的 AI 模型列表才会加载出来。重启后在模型搜索框输入「101gpt」即可找到刚配好的模型。
+> 🔄 **新手必看 · 重启后生效**：手动填完 API Key、基础 URL 和模型、点击「提交」后，**关闭 OpenCode 后重启即可**，新的 AI 模型列表才会加载出来。重启后在模型搜索框输入「101gpt」即可找到刚配好的模型。
 
 ### 3、配置 DeepSeek Harness（按需选配）
 
@@ -296,7 +296,7 @@ DeepSeek Harness 下载地址：<https://www.deepseek.com/harness/>。在配置�
 
 ![DeepSeek Harness 填写 API 地址](assets/fgpt-c5-14.png)
 
-> 🔄 **新手必看 · 重启后生效**：添加并保存提供方后，请**彻底退出并重新打开 DeepSeek Harness**，新的 AI 模型列表才会加载生效；重启后再到模型列表里选择 101gpt 的模型。
+> 🔄 **新手必看 · 重启后生效**：添加并保存提供方后，请**关闭 DeepSeek Harness 后重启即可**，新的 AI 模型列表才会加载生效；重启后再到模型列表里选择 101gpt 的模型。
 
 ### 4、配置 TraeWork（按需选配）
 
@@ -325,7 +325,7 @@ TraeWork 下载地址：<https://www.trae.cn/>。在模型对话框页面，点�
 ![TraeWork 模型出现在列表](assets/fgpt-c5-20.png)
 ![TraeWork 模型列表查看 GPT 模型](assets/fgpt-c5-21.png)
 
-> 🔄 **新手必看 · 重启后生效**：模型设置完成后，建议**彻底退出并重新打开 TraeWork**，新添加的模型才会正式出现在对话模型列表中。
+> 🔄 **新手必看 · 重启后生效**：模型设置完成后，建议**关闭 TraeWork 后重启即可**，新添加的模型才会正式出现在对话模型列表中。
 
 > 💻 **命令行自检（可选）**：Windows 下可用命令行测试 101GPT 支持哪些模型：
 > `curl https://101gpt.cc/v1/models -H "Authorization: Bearer 你的API Key"`
