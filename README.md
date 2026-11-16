@@ -235,14 +235,6 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 **下载与安装**：前往 OpenCode 官网 <https://opencode.ai/zh> 下载对应系统版本，安装并启动 OpenCode。
 
-> 📥 **备用下载（云盘安装包）**：
-
-| 平台 | 安装包 | 网盘链接 | 提取码 |
-|------|--------|----------|:---:|
-| 🪟 Windows | `opencode-desktop-windows-x64-1-14-24-0.exe` | <https://pan.baidu.com/s/1BC3hw4f-lWBPYvbBPfR4oA?pwd=8q87> | `8q87` |
-| 🍎 Mac（Intel） | `OpenCode-macOS (Intel).dmg` | <https://pan.baidu.com/s/1AXvVRWlvDa8EeRsIdv3kPg?pwd=p89a> | `p89a` |
-| 🍏 Mac（Apple 芯片） | `OpenCode-macOS (Apple Silicon).dmg` | <https://pan.baidu.com/s/1--dJanQKL54Ri2o4tbvn1Q?pwd=53nu> | `53nu` |
-
 初次启动后，「打开项目」就是选一个文件夹 📂 或者存储盘就好，智能体对具体的范围发挥智能，不会额外做功。小何在 Windows 电脑通常先选了 **D盘**，而苹果 Mac 通常选择 **Download 文件夹** 📂。
 
 ![启动OpenCode](assets/image8.png)
