@@ -1,0 +1,6 @@
+# 原始图片备份：含旧 fromgpt 画面内容，仅本地保留，不发布到 GitHub Pages
+assets/_orig_fgpt/
+
+# npm 依赖与锁文件：静态网页发布不需要
+node_modules/
+package-lock.json
