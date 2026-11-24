@@ -165,8 +165,12 @@ function renderTable(data, tab) {
   document.getElementById('c1Detail').textContent = byA[0] ? byA[0].am+'亿' : '';
   document.getElementById('c2Name').textContent = byV[0] ? byV[0].n : '--';
   document.getElementById('c2Detail').textContent = byV[0] ? byV[0].vo+'万手' : '';
-  document.getElementById('totalAmount').textContent = byA.reduce((s,r)=>s+r.am,0).toFixed(2)+'亿';
-  document.getElementById('totalVolume').textContent = byV.reduce((s,r)=>s+r.vo,0).toFixed(2)+'万手';
+  // ★ 合计卡片必须与当前表格同源：都取「当前显示的这张榜」的前 20 只。
+  //   旧写法 totalAmount 取 byA、totalVolume 取 byV，导致成交额榜视图下两张卡片来自
+  //   不同榜单（成交额榜 20 只 vs 成交量榜 20 只），成交量合计恒比表格逐行加总大约 4 倍
+  //   （11-24 实测 9500.13 万手 vs 2401.06 万手）。切换榜单时两卡同步更新。
+  document.getElementById('totalAmount').textContent = data.reduce((s,r)=>s+r.am,0).toFixed(2)+'亿';
+  document.getElementById('totalVolume').textContent = data.reduce((s,r)=>s+r.vo,0).toFixed(2)+'万手';
   document.getElementById('updateTime').textContent = new Date().toLocaleString('zh-CN');
 
   const maxVal = Math.max(...data.map(r=>key==='amount'?r.am:r.vo), 1);
